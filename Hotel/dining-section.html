@@ -28,14 +28,21 @@
         align-items: center;   
         text-align: center;
       }
+
+      .card {
+        border-radius: 20px;
+      }
+      
       .card-child {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        
       }
 
       .card-child:hover {
         transform: translateY(-8px); 
         box-shadow: 0 10px 25px rgba(0,0,0,0.25); 
       }
+      
 
       .heading-offers {
         margin-left: 10%;
@@ -50,24 +57,107 @@
       } 
 
       .card-title{
-
+        font-family: 'Georgia', serif; 
         font-weight: bold;
         margin-top: -1px;
       }
+      .top-header {
+            background: linear-gradient(135deg, #B2A195 0%, #9f8681 100%);
+            height: 20px;
+      }
+      .logo {
+        max-height: 110px;
+        width: auto;
+        display: block;
+        margin: 25px auto;
+      }
+
+      body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #faf8f6;
+            color: #6b5d57; 
+      }
+
+      .hotel-image {
+            display: block;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            border-radius: 0;
+            width: 100%;
+            height: 450px;
+
+      }
+      .seperator-block{
+        height: 75px;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        padding: 15px 0;
+      }
+
+      .intro-title {
+            font-family: 'Georgia', serif; 
+            font-size: 4.9rem; 
+            color: #6b5d57; 
+            margin-bottom: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .intro-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #B2A195, transparent);
+        }
+
+        .intro-body {
+            line-height: 1.9;
+            color: #7a6f6a;
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+
+        .card-img-top{
+          
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+
+        }
 
 
     </style>
   </head>
   <body>
+    
+    <img src="images/banner-1.png" alt="Luxury Hotel Exterior and Pool" class="hotel-image img-fluid ">
+    
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="intro-title">Restaurant and Fine Dining</h2>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    
+                    <p class="intro-body">
+                      Treat your palate and senses to an irresistible selection of international dishes — from Filipino and other Asian favorites to European and American specialties — all crafted to perfection by our acclaimed chefs.
+                    </p>
+                    
+                    <p class="intro-body mt-4">
+                      Indulge in vibrant flavors, comforting classics, and bold culinary twists as each dish is prepared with the finest ingredients and inspired techniques. Whether you’re craving something familiar or eager to explore new tastes, every plate promises a memorable dining experience.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="card bg-dark text-white">
-  <img class="card-img header-img" src="images/banner-1.png" alt="Card image">
-  <div class="card-img-overlay">
-    <h1 class="card-title">Restaurant and Fine Dining</h1>
-    <p class="card-text" style="width: 75%;">Treat your palate and senses to an irresistible selection of international dishes — from Filipino and other Asian favorites to European and American specialties — all crafted to perfection by our acclaimed chefs.</p>
-
-  </div>
-</div>
+    
 
   <div class="container mt-4">
   <div class="row">
